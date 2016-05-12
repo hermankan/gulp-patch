@@ -1,6 +1,6 @@
 {
   "name": "gulp-patch",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Create and apply a patch of new/changed/deleted files",
   "license": "MIT",
   "repository": {
