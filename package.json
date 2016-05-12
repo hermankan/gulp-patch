@@ -14,7 +14,6 @@
   "bugs": {
     "url": "https://github.com/hermankan/gulp-patch/issues"
   },
-  "readme": "README.md",
   "keywords": [
     "gulpplugin",
     "patch",
@@ -35,9 +34,6 @@
     "index.js"
   ],
   "main": "index.js",
-  "scripts": {
-    "test": "mocha"
-  },
   "dependencies": {
     "del": "^2.2.0",
     "mkdirp": "^0.5.1",
@@ -46,7 +42,6 @@
     "vinyl-fs": "^2.4.3"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "mocha": "*"
+    "gulp": "^3.9.1"
   }
 }
