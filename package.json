@@ -1,13 +1,13 @@
 {
   "name": "gulp-patch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Create and apply a patch of new/changed/deleted files",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git://github.com/hermankan/gulp-patch.git"
   },
- "author": {
+  "author": {
     "name": "Herman Kan",
     "email": "hermankan@mail.ru"
   },
