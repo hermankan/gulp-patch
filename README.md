@@ -18,7 +18,7 @@ The package includes the following sub-modules:
   * `patch.apply` - creates, overwrites and deletes the files as per their patch status.
 
 
-## Install
+## Installation
 
 ```
 $ npm install --save-dev gulp-patch

@@ -1,19 +1,72 @@
 {
-  "name": "gulp-patch",
-  "version": "0.1.2",
-  "description": "Create and apply a patch of new/changed/deleted files",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/hermankan/gulp-patch.git"
+  "_args": [
+    [
+      "gulp-patch@^0.1.3",
+      "C:\\Work\\SimpleCrowdfunding"
+    ]
+  ],
+  "_from": "gulp-patch@>=0.1.3 <0.2.0",
+  "_id": "gulp-patch@0.1.3",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/gulp-patch",
+  "_nodeVersion": "4.3.1",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/gulp-patch-0.1.3.tgz_1463043963162_0.9538169766310602"
   },
+  "_npmUser": {
+    "email": "hermankan@mail.ru",
+    "name": "hermankan"
+  },
+  "_npmVersion": "3.8.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "gulp-patch",
+    "raw": "gulp-patch@^0.1.3",
+    "rawSpec": "^0.1.3",
+    "scope": null,
+    "spec": ">=0.1.3 <0.2.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_shasum": "3ec2b8bb66def956bebd97b6e79f69c55cf6dc77",
+  "_shrinkwrap": null,
+  "_spec": "gulp-patch@^0.1.3",
+  "_where": "C:\\Work\\SimpleCrowdfunding",
   "author": {
-    "name": "Herman Kan",
-    "email": "hermankan@mail.ru"
+    "email": "hermankan@mail.ru",
+    "name": "Herman Kan"
   },
   "bugs": {
     "url": "https://github.com/hermankan/gulp-patch/issues"
   },
+  "dependencies": {
+    "del": "^2.2.0",
+    "mkdirp": "^0.5.1",
+    "through2": "^2.0.1",
+    "vinyl": "^1.1.1",
+    "vinyl-fs": "^2.4.3"
+  },
+  "description": "Create and apply a patch of new/changed/deleted files",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "3ec2b8bb66def956bebd97b6e79f69c55cf6dc77",
+    "tarball": "https://registry.npmjs.org/gulp-patch/-/gulp-patch-0.1.3.tgz"
+  },
+  "engines": {
+    "node": ">=4.3.1"
+  },
+  "files": [
+    "index.js"
+  ],
+  "gitHead": "fca664b812b18919fb1f98c655f8dc2183e4ce4f",
+  "homepage": "https://github.com/hermankan/gulp-patch#readme",
   "keywords": [
     "gulpplugin",
     "patch",
@@ -27,21 +80,21 @@
     "deleted",
     "removed"
   ],
-  "engines": {
-    "node": ">=4.3.1"
-  },
-  "files": [
-    "index.js"
-  ],
+  "license": "MIT",
   "main": "index.js",
-  "dependencies": {
-    "del": "^2.2.0",
-    "mkdirp": "^0.5.1",
-    "through2": "^2.0.1",
-    "vinyl": "^1.1.1",
-    "vinyl-fs": "^2.4.3"
+  "maintainers": [
+    {
+      "email": "hermankan@mail.ru",
+      "name": "hermankan"
+    }
+  ],
+  "name": "gulp-patch",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hermankan/gulp-patch.git"
   },
-  "devDependencies": {
-    "gulp": "^3.9.1"
-  }
+  "scripts": {},
+  "version": "0.1.3"
 }

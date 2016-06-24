@@ -207,8 +207,12 @@ patch.apply = function(destFolder, options) {
 	function transform(file, encoding, callback) {
 		const status = patch.getFileStatus(file);
 
-		if (status === patch.DELETED)
-			fs.unlinkSync(file.path);
+		if (status === patch.DELETED) {
+			fs.stat(file.path, function(err, stat) {
+				if (stat)
+					fs.unlinkSync(file.path);
+			});
+		}
 		else if (status === patch.NEW || status === patch.CHANGED) {
 			const targetPath = path.join(destFolder, file.relative);
 
