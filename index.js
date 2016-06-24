@@ -183,8 +183,16 @@ patch.read = function(patchFolder, destFolder, options) {
 
 		if (status === patch.NEW || status === patch.CHANGED)
 			vinylFiles.push(path.join(patchFolder, file));
-		else if (status === patch.DELETED)
-			vinylFiles.push(path.join(destFolder, file));
+		else if (status === patch.DELETED) {
+			const delPath = path.join(destFolder, file);
+			try {
+				fs.statSync(delPath);
+				vinylFiles.push(delPath);
+			}
+			catch (e) {
+			  console.log('File ' + delPath + ' does not exist');
+			}
+		}
 
 		++counter[status];
 	}
@@ -207,12 +215,8 @@ patch.apply = function(destFolder, options) {
 	function transform(file, encoding, callback) {
 		const status = patch.getFileStatus(file);
 
-		if (status === patch.DELETED) {
-			fs.stat(file.path, function(err, stat) {
-				if (stat)
-					fs.unlinkSync(file.path);
-			});
-		}
+		if (status === patch.DELETED)
+			fs.unlinkSync(file.path);
 		else if (status === patch.NEW || status === patch.CHANGED) {
 			const targetPath = path.join(destFolder, file.relative);
 
